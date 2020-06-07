@@ -19,20 +19,21 @@ stats = {
 }
 
 map = [\
-['#', '#', '#', '#', '\n'],\
-['#', ' ', ' ', '#', '\n'],\
-['#', ' ', ' ', '#', '\n'],\
-['#', '#', '#', '#', '\n']\
+['#', '#', '#', '#'],\
+['#', ' ', ' ', '#'],\
+['#', ' ', ' ', '#'],\
+['#', '#', '#', '#']\
 ]
 
 
 def start():
-	print("".join(map))
+	for row in map:
+		print("".join(row))
 	read()
 
 def read():
 	while gameRunning:
-		input_char = msvcrt.getch()
+		input_char = str(msvcrt.getch())[2]
 		if input_char.upper() == 'W': pass
 		if input_char.upper() == 'A': pass
 		if input_char.upper() == 'S': pass

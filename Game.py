@@ -23,7 +23,6 @@ map = [\
 
 
 def start():
-<<<<<<< HEAD
 	for row in map:
 		print("".join(row))
 	read()
@@ -38,11 +37,6 @@ def read():
 		if input_char.upper() == 'X': exit()
 		
 	
-=======
-	print(chatter)
-
-
->>>>>>> master
 
 #Begin game	
 if __name__ == "__main__": start()

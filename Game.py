@@ -23,21 +23,44 @@ map = [\
 
 gameRunning = True
 
+#Print current map state
+def displayMap():
+	for row in map: print("".join(row))
+
+#Start Actions
+def moveW():
+	pass
+def moveA():
+	pass
+def moveS():
+	pass
+def moveD():
+	pass
+def stopGame():
+	global gameRunning
+	gameRunning = False
+#End Actions
+
+#Hashtable key-to-action
+actions = {
+	"W": moveW,
+	"A": moveA,
+	"S": moveS,
+	"D": moveD,
+	"X": stopGame
+}
+
+#Game starts here
 def start():
-	for row in map:
-		print("".join(row))
+	displayMap()
 	read()
 
+#Read in player input
 def read():
+	global gameRunning
 	while gameRunning:
 		input_char = str(msvcrt.getch())[2]
-		if input_char.upper() == 'W': pass
-		if input_char.upper() == 'A': pass
-		if input_char.upper() == 'S': pass
-		if input_char.upper() == 'D': pass
-		if input_char.upper() == 'X': exit()
-		
-	
+		if input_char.upper() in actions: actions[input_char.upper()]()
 
-#Begin game	
+#Call start function
 if __name__ == "__main__": start()

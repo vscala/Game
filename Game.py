@@ -21,6 +21,7 @@ map = [\
 ['#', '#', '#', '#']\
 ]
 
+gameRunning = True
 
 def start():
 	for row in map:

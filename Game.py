@@ -3,16 +3,13 @@
 A text based shooter game (not really)
 """
 import msvcrt
+import Player
+
 __author__ = "Your Name"
 __version__ = "0.1.0"
 __license__ = "MIT"
 
-stats = {
-	"Health" : 0,
-	"Attack_Damage" : 0,
-	"Ranged_Damage" : 0,
-	"Stamina" : 0
-}
+
 
 map = [\
 ['#', '#', '#', '#'],\

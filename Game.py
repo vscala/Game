@@ -2,7 +2,7 @@
 """
 A text based shooter game (not really)
 """
-
+import msvcrt
 __author__ = "Your Name"
 __version__ = "0.1.0"
 __license__ = "MIT"

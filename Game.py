@@ -2,15 +2,11 @@
 """
 A text based shooter game (not really)
 """
-
 import msvcrt
-
 __author__ = "Your Name"
 __version__ = "0.1.0"
 __license__ = "MIT"
 
-
-gameRunning = True
 stats = {
 	"Health" : 0,
 	"Attack_Damage" : 0,
@@ -19,20 +15,22 @@ stats = {
 }
 
 map = [\
-['#', '#', '#', '#', '\n'],\
-['#', ' ', ' ', '#', '\n'],\
-['#', ' ', ' ', '#', '\n'],\
-['#', '#', '#', '#', '\n']\
+['#', '#', '#', '#'],\
+['#', ' ', ' ', '#'],\
+['#', ' ', ' ', '#'],\
+['#', '#', '#', '#']\
 ]
 
+gameRunning = True
 
 def start():
-	print("".join(map))
+	for row in map:
+		print("".join(row))
 	read()
 
 def read():
 	while gameRunning:
-		input_char = msvcrt.getch()
+		input_char = str(msvcrt.getch())[2]
 		if input_char.upper() == 'W': pass
 		if input_char.upper() == 'A': pass
 		if input_char.upper() == 'S': pass

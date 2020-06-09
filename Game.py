@@ -97,7 +97,7 @@ def read(character):
 		displayMap()
 
 #Call start function
-if __name__ == "__main__": start()
+#if __name__ == "__main__": start()
 
 def main():
     screen_width = 80

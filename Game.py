@@ -17,7 +17,7 @@ def main():
 
     libtcod.console_set_custom_font('arial10x10.png', libtcod.FONT_TYPE_GREYSCALE | libtcod.FONT_LAYOUT_TCOD)
 
-    libtcod.console_init_root(screen_width, screen_height, 'libtcod tutorial revised', False)
+    libtcod.console_init_root(screen_width, screen_height, 'The Game that is Played', False)
 
     while not libtcod.console_is_window_closed():
         libtcod.console_set_default_foreground(0, libtcod.white)

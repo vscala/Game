@@ -5,6 +5,7 @@ A text based shooter game (not really)
 #import msvcrt
 #import Player
 import tcod as libtcod
+from input_handlers import handle_keys
 
 __author__ = "Your Name"
 __version__ = "0.1.0"
